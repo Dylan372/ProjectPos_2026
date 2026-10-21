@@ -43,3 +43,7 @@ test.bat        rem unit tests (8 test groups)
 System operations mirror the SSDs of the use cases:
 `makeNewSale()`, `enterItem(id, qty)`, `endSale()`, `makePayment(amount)`,
 `makeNewReturn()`, `enterReturnedItem(id, qty)`, `endReturn()`, `receiveRefund(amount)`.
+
+## Team Members
+
+- Member C: Zeng Tianci (GitHub: ZengTianci)

@@ -46,4 +46,5 @@ System operations mirror the SSDs of the use cases:
 
 ## Team Members
 
+- Member A: Jindong Wang (GitHub: Dylan372) — Maintainer
 - Member C: Zeng Tianci (GitHub: ZengTianci)

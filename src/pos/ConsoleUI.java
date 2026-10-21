@@ -25,6 +25,7 @@ public class ConsoleUI {
         System.out.println("     " + store.getAddress());
         System.out.println("     PoS System - Software Engineering Practice");
         System.out.println("==================================================");
+        showIdReference();
         boolean running = true;
         while (running) {
             System.out.println();
@@ -48,11 +49,22 @@ public class ConsoleUI {
         System.out.println("Goodbye!");
     }
 
+    /** Prints a compact item-ID reference so the cashier knows what to enter. */
+    private void showIdReference() {
+        System.out.println("  Item ID reference:");
+        for (ProductSpecification spec : store.getCatalog().getAll()) {
+            System.out.printf("    %04d  %-22s %6.2f%n",
+                    spec.getItemID(), spec.getDescription(), spec.getPrice());
+        }
+        System.out.println("  (enter the 4-digit ID, e.g. 1001 for Coca-Cola)");
+    }
+
     /** Handles the Process Sale use case step by step (interactive or scripted). */
     public void processSale(boolean scripted) {
         try {
             register.makeNewSale();
             System.out.println(">> Starting a new sale...");
+            showIdReference();
             while (true) {
                 System.out.print("Enter item ID (0 to finish): ");
                 String id = scripted ? readScripted() : in.nextLine().trim();
@@ -87,6 +99,7 @@ public class ConsoleUI {
         try {
             register.makeNewReturn();
             System.out.println(">> Starting a new return...");
+            showIdReference();
             while (true) {
                 System.out.print("Enter returned item ID (0 to finish): ");
                 String id = scripted ? readScripted() : in.nextLine().trim();

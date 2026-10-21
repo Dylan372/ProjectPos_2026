@@ -5,10 +5,11 @@ with two core use cases: **Process Sale** and **Handle Returns**, developed with
 
 ## Team & Collaboration
 
-- Maintainer: 成员A
-- Collaborators: 成员A / 成员B / 成员C
+- Maintainer: Jindong Wang
+- Collaborators: Jindong Wang / Peilin He / Tianci Zeng
 - Each member works on a unique branch (`member-A`, `member-B`, `member-C`),
   merges into `main` via Pull Requests. **Branches are kept after merging.**
+- Repository: https://github.com/Dylan372/ProjectPos_2026
 
 ## Repository layout
 

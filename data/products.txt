@@ -1,0 +1,11 @@
+# Product catalog: id|description|price
+1001|Coca-Cola 330ml|3.50
+1002|Pepsi 330ml|3.50
+1003|Mineral Water 550ml|2.00
+1004|Instant Noodles|4.50
+1005|Potato Chips|6.00
+1006|Milk 250ml|3.80
+1007|Bread|5.50
+1008|Coffee Latte|12.00
+1009|Chocolate Bar|8.00
+1010|Tissues|2.50

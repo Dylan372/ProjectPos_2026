@@ -64,7 +64,9 @@ public class ConsoleUI {
         try {
             register.makeNewSale();
             System.out.println(">> Starting a new sale...");
-            showIdReference();
+            if (!scripted) {
+                showIdReference();
+            }
             while (true) {
                 System.out.print("Enter item ID (0 to finish): ");
                 String id = scripted ? readScripted() : in.nextLine().trim();
@@ -99,7 +101,9 @@ public class ConsoleUI {
         try {
             register.makeNewReturn();
             System.out.println(">> Starting a new return...");
-            showIdReference();
+            if (!scripted) {
+                showIdReference();
+            }
             while (true) {
                 System.out.print("Enter returned item ID (0 to finish): ");
                 String id = scripted ? readScripted() : in.nextLine().trim();
